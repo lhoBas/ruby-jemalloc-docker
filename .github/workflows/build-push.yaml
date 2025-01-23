@@ -71,4 +71,4 @@ jobs:
             RUBY_CHECKSUM=${{ matrix.checksum }}
             IMAGE_NAME=${{ steps.context.outputs.image_name }}
             ADDITIONAL_FLAGS=${{ steps.context.outputs.flags }}
-          tags: ghcr.io/${{ github.repository }}:${{ matrix.version }}-${{ matrix.image }}
+          tags: ghcr.io/lhobas/ruby-jemalloc:${{ matrix.version }}-${{ matrix.image }}
